@@ -21,4 +21,6 @@ console.log(typeof variable);
 console.log(typeof 123);
 console.log(typeof 'text');
 
-
+let testVariable;
+testVariable = 'test';
+console.log(typeof testVariable);
