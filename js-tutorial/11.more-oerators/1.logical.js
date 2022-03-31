@@ -25,7 +25,7 @@ function changeOwner(animal) {
   animal.owner = '바뀐주인!';
 }
 function makeNewOwner(animal) {
-  if (ani mal.owner) {
+  if (animal.owner) {
     throw new Error('주인이 있어');
   }
   animal.owner = '새로운주인!';
