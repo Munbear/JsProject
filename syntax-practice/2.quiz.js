@@ -15,11 +15,20 @@ function solution(x,n) {
     };
     return result;
 };
-console.log(solution(-4,2))
+console.log('myAnswer : ',solution(-4,2))
 
 
 function bestAnswer(x, n) {
     return Array(n).fill(x).map( (v, i) => (i + 1) * v);
 }
+console.log('bestAnswer : ',bestAnswer(2,5));
 
-console.log(bestAnswer(2,5));
+function otherAnswer(x, n) {
+    let answer = [];
+    for(let i= 1; i <= n; i++){
+        answer.push(x*i)
+    }
+    return answer
+}
+
+console.log('otherAnswer :',otherAnswer(3,4));
