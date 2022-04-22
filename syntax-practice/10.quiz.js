@@ -8,6 +8,7 @@ function solution(str) {
             const a = parseFloat(stack.pop())
             const b = parseFloat(stack.pop())
             switch(value[i]) {
+
                 case'+':
                     stack.push(a+b);
                     break

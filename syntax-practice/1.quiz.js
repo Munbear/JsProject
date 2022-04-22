@@ -5,7 +5,7 @@ function solution(s) {
     for(let i=0; i < number.length; i++) {
         let arr = answer.split(number[i]);j
         console.log(arr);
-        answer = arr.join(i);
+        answer = arr.join();
     }
 
     return Number(answer);
