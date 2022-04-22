@@ -5,6 +5,7 @@ function stringOperator(str) {
     const operators = ['minus', 'plus']
     for (let i = 0; i < numString.length; i++) {
         if (result.includes(numString[i])) {
+            console.log('ll',numString[i])
             result = result.replaceAll(numString[i], valueNum[i])
         }
     }
