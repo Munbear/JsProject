@@ -48,7 +48,6 @@ function StringChallenge(str) {
     return resultString;
 }
 
-// keep this function call here
-// console.log(StringChallenge("onezeropluseight"));
+console.log(StringChallenge("onezeropluseight"));
 console.log(StringChallenge("oneminusoneone"));
 
