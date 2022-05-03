@@ -10,6 +10,8 @@ let 사람 = {
     name : '손흥민',
     sayHi : function (){
         console.log(`안녕 나는 ${this.name}`)
+        console.log('안녕 나는 ' + this.name)
+
     },
 }
 사람.sayHi();
@@ -40,3 +42,8 @@ let 자료 = {
 setTimeout( () => {
     console.log('3초뒤 작동됨')
 }, 3000);
+
+// document.getElementById('button').addEventListener('click', function() {
+//     setTimeout(() => { console.log(this.innerHTML)}, 2000);
+// })
+
