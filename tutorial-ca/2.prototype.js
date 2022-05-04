@@ -20,7 +20,39 @@
  * 손자.age
  * => 20 => 50
  *
- * 
- * Es6
  *
+ * 상속기능을 구현하는 ES6 방법
+ * Es6 : class
  */
+
+class 부모 {
+    constructor(/*여기에다가 파라미터 */) {
+        this.name = "kim";
+        // 함수를 추가하고 싶으면?
+        // 1. constructor 에 추가하든가
+        // 1-1 자식이 직접 함수를 가짐
+
+        // this.sayHi = function () {
+        //     console.log('hello')
+        // }
+    }
+    // 2. 여기에다가 작성하던가
+    // 2-1 여기에 쓰면 오브젝트에 추가 안됨
+    // 2-2 부모.prototype에 추가가 된다
+
+    sayHi() {
+        console.log('helloooo')
+    }
+
+    /**
+     * seyHello() { }
+     */
+
+}
+
+// 부모.prototype.sayHello = function () { }
+
+let 자식 = new 부모(/* 파라미터는 */);
+console.log(자식);
+// 자식.__proto__ = 부모.prototype
+Object.getPrototypeOf(자식); // 부모님 prototype을 출력해주세요 ~
