@@ -81,7 +81,7 @@ let rollBook3 = new Set(rollBook2); // Array를 Set으로 바꾸기
 rollbook2 = [...rollBook3] // Set을 Array로 바꾸기
 // 이러한 패턴으로 많이 한다.
 // 위의 예제는 rollbook2 라는 Array 자료형을 Set으로 바꿨다가 다시 Array로 바꾸는 에제이다.
-// 그럼 이제 rollbook2 에 있는 중복자룓ㄹ이 자동으로 제가가 된다.
+// 그럼 이제 rollbook2 에 있는 중복자료들이 자동으로 제거가 된다.
 
 
 
