@@ -70,8 +70,23 @@ console.log('unit의 총 능력치는 : ',unitA.battlePoint);
 console.log('unit의 총 능력치는 : ',unitB.battlePoint)
 // 문제3.
 console.log('-------------------------밑에서부터 문제3 ------------------------------');
-let data = {
-    odd: [],
-    even: [],
-}
+let quizData = {
+    odd : [],
+    even : [],
+    setterFunc : function(...nums){
+        nums.forEach( (a) => {
+            if( a % 2 == 1){
+                console.log(this.odd.push(a)) // 짝수일때
+            } else {
+                console.log(this.even.push(a)) // 홀수일때
+            }
+        });
+    },
+    get getterFunc() {
+      return [...this.odd, ...this.even].sort()
+    }
+};
 
+
+quizData.setterFunc(1,2,3,4,5,6);
+console.log(quizData.getterFunc);
