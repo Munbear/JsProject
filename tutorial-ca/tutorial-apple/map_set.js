@@ -38,9 +38,9 @@ for(let key of person3.keys() ) {
 
 
 // 자료를 직접 집어넣고 싶으면
-let person4 new Map([
+let person4 = new Map([
     ['age',20],
-    ['name' 'kim']
+    ['name' ,'kim']
 ]);
 
 let array = [1,5,34,64,23,5,632,9];
