@@ -7,3 +7,15 @@ function makeDescendingOrderInteger(num) {
 }
 
 console.log(makeDescendingOrderInteger(118372));
+
+function otherWayAnswer(n) {
+    const convertString = n + '';
+    const arr = convertString
+        .split('')
+        .sort( (a,b)=> b-a)
+        .join('')
+    const convertNumber = Number(arr);
+    return convertNumber;
+}
+
+console.log(otherWayAnswer(118372))
