@@ -1,7 +1,8 @@
-// 뒷자리 4자리를 제외한 나머지 번호를 * 문자열로 바꿔라
-
 function hidePhoneNumber(phone_number) {
-    console.log(phone_number);
-}
+    let result = "*".repeat(phone_number.length - 4) + phone_number.slice(-4);
+    console.log('A'.repeat(3));s
+    return result
+;}
 
-hidePhoneNumber('01033334444');
+console.log(hidePhoneNumber('01033334444'));
+console.log(hidePhoneNumber("027778888"));
