@@ -1,11 +1,11 @@
 function ArrayIsArray(item) {
     if(typeof item === typeof []){
-        console.log(true)
-    } else if (typeof item === typeof {} && typeof item == null) {
-        console.log(false)
+        return true
     } else {
-        console.log(false)
+        return false
     }
 }
-
-ArrayIsArray()
+//
+// ArrayIsArray([]);
+// ArrayIsArray(new Array());
+console.log(ArrayIsArray())
