@@ -1,5 +1,0 @@
-function prototypeIndexOf() {
-
-}
-
-prototypeIndexOf()
