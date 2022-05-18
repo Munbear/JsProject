@@ -22,3 +22,33 @@ console.log(testSort.sort( (a,b) => a - b));
 [10,20,30].forEach( (item, index, arr) => {
     console.log(`elementValue: ${item}, index : ${index}, this: ${arr}`);
 })
+
+
+// reduce
+const sum = [1,2,3,4,5,6,7,8,9,10]
+let result = sum.reduce( (accumulator,currentValue, index,array) => accumulator + currentValue, 0);
+console.log(sum);
+
+// fundIndex
+console.clear();
+const users = [
+    {id:1, name:'Lee'},
+    {id:2, name:'Kim'},
+    {id:3, name:'Park'},
+    {id:4, name:'Choi'},
+]
+
+//id가 2인 요소의 인덱스를 구한다.
+console.log(users.findIndex(user => user.id == 2)); // -> 1
+// name이 Park 인 요소의 인덱스를 구한다.
+console.log(users.findIndex(user => user.name == 'Park')); // -> 2
+
+function predicate(key, value) {
+    // key 와 value를 기억하는 클로저를 반환
+    return item => item[key] === value;
+}
+
+console.log(users.findIndex(predicate('id', 2)));
+ //
+console.log(users.findIndex(predicate('name', 'Park')));
+
