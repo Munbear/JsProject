@@ -9,10 +9,7 @@ function makeSlice(item1, item2) {
         'strawberry'
     ];
     let testing = array.filter(array => array.length > item1 && array[item2]);
-    console.log('필터',testing);
-    for(let i=0; i < array.length ; i++){
-        console.log(array[i])
-    }
+    return testing 
 }
 
 makeSlice(1,4)
