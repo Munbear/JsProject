@@ -16,7 +16,7 @@ function removeElement(arr) {
 }
 
 
-console.log(removeElement([1,1,3,3,0,1,1]));
+// console.log(removeElement([1,1,3,3,0,1,1]));
 // removeElement([1,1,3,3,0,1,1]);
 
 // console.log(removeElement([4,4,4,3,3]))
